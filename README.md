@@ -28,6 +28,12 @@ Voter ID: v3
 
 # *Features*
 
+Python Latest vesion 
+
+flask installation (pip install flask)
+
+mysql.connector installation (pip install mysql.connector)
+
 Secure admin login for managing votes and results.
 
 Voter authentication using Name and Voter ID.
@@ -41,6 +47,9 @@ Real-time vote counting and result announcement.
 
 Clone the repository:
 git clone https://github.com/your-repo/voting-system.git
+
+database: export the database 
+database name: voting_system.sql 
 
 Navigate to the project directory:
 cd voting-system
