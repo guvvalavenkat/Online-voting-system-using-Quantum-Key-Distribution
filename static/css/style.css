@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+.ballot label {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+button, .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #45a049;
+}
+
+form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.buttons a {
+    margin: 10px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}

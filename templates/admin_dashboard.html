@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="center">
+    <h1>Admin Dashboard</h1>
+    <h2>Add New Voter</h2>
+    <form action="/admin_dashboard" method="POST">
+      <input type="text" name="voter_name" placeholder="Voter Name" required>
+      <input type="text" name="voter_id_number" placeholder="Voter ID Number" required>
+      <button type="submit">Add Voter</button>
+    </form>
+    
+    <h2>Voting Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Voter ID</th>
+          <th>Encrypted Vote</th>
+          <th>Decrypted Vote</th>
+          <th>QKD Key</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for result in vote_results %}
+        <tr>
+          <td>{{ result.voter_id_number }}</td>
+          <td>{{ result.encrypted_vote }}</td>
+          <td>{{ result.decrypted_vote }}</td>
+          <td>{{ result.qkd_key }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    
+    <h2>Summary</h2>
+    <ul>
+      <li>YSRCP: {{ vote_count['YSRCP'] }} votes</li>
+      <li>TDP: {{ vote_count['TDP'] }} votes</li>
+      <li>BJP: {{ vote_count['BJP'] }} votes</li>
+      <li>Janasena: {{ vote_count['Janasena'] }} votes</li>
+    </ul>
+    <h3>Winner: {{ winner }}</h3>
+    <a href="{{ url_for('home') }}" class="btn">Return Home</a>
+  </div>
+</body>
+</html>

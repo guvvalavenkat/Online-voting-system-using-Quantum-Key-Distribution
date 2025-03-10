@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Voting System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="center">
+    <h1>Welcome to the Online Voting System</h1>
+    <div class="buttons">
+      <a href="{{ url_for('voter_login') }}" class="btn">Voter Login</a>
+      <a href="{{ url_for('admin_login') }}" class="btn">Admin Login</a>
+    </div>
+  </div>
+</body>
+</html>

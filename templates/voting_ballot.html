@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voting Ballot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="center">
+    <h1>Cast Your Vote</h1>
+    <form action="/voting_ballot" method="POST">
+      <div class="ballot">
+        <input type="radio" name="party" value="YSRCP" required>
+        <label>YSRCP <img src="{{ url_for('static', filename='images/ysrcp_symbol.png') }}" alt="YSRCP Symbol" width="50"></label><br>
+        
+        <input type="radio" name="party" value="TDP">
+        <label>TDP <img src="{{ url_for('static', filename='images/tdp_symbol.png') }}" alt="TDP Symbol" width="50"></label><br>
+        
+        <input type="radio" name="party" value="BJP">
+        <label>BJP <img src="{{ url_for('static', filename='images/bjp_symbol.png') }}" alt="BJP Symbol" width="50"></label><br>
+        
+        <input type="radio" name="party" value="Janasena">
+        <label>Janasena <img src="{{ url_for('static', filename='images/janasena_symbol.png') }}" alt="Janasena Symbol" width="50"></label>
+      </div>
+      <button type="submit">Submit Vote</button>
+    </form>
+  </div>
+</body>
+</html>

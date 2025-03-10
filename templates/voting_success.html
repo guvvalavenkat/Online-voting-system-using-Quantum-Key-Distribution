@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vote Successful</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="center">
+    <h1>Your vote has been cast successfully!</h1>
+    <p>Thank you for voting.</p>
+    <a href="{{ url_for('home') }}" class="btn">Return Home</a>
+  </div>
+</body>
+</html>

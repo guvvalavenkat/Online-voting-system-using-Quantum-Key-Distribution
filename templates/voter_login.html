@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voter Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="center">
+    <h1>Voter Login</h1>
+    <form action="/voter_login" method="POST">
+      <input type="text" name="voter_id_number" placeholder="Enter your Voter ID" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
