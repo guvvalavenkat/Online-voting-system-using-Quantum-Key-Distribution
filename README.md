@@ -1,6 +1,7 @@
 # **Admin Login Credentials** 
-username: admin
-password: adminpassword
+Username: admin
+
+Password: adminpassword
 
 # **voter Login Credentials** 
 voter name: voter 1
