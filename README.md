@@ -4,12 +4,17 @@ Username: admin
 Password: adminpassword
 
 # **voter Login Credentials** 
-voter name: voter 1
-vote id:  v1
-voter name: voter 2
-vote id:  v2
-voter name: voter 3
-vote id:  v3
+Voter Name: Voter 1
+
+Voter ID: v1
+
+Voter Name: Voter 2
+
+Voter ID: v2
+
+Voter Name: Voter 3
+
+Voter ID: v3
 
 
 # **Home Page**
