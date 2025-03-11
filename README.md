@@ -9,7 +9,7 @@ Voter ID: v1
 Voter Name: Voter 2
 Voter ID: v2
 
-Voter Name: Voter 3
+Voter Name: Voter 3.
 Voter ID: v3
 
 
